@@ -125,7 +125,7 @@ onload = function(){
     gl.compileShader(shader);
     
     //シェーダが正しくコンパイルされたかチェック
-    if(gl.getShaderParameter(shader gl.COMPILE_STATUS)){
+    if(gl.getShaderParameter(shader, gl.COMPILE_STATUS)){
       return shader; //成功していたらシェーダを返して終了
     }else{
       //失敗していたらエラーログをアラートする
